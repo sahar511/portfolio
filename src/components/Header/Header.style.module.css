@@ -1,0 +1,37 @@
+.container { 
+    text-align: left;
+    position: sticky;
+    top: 0;
+    padding: 50px;
+    height: 100vh;
+}
+
+.box {
+    background-color: #fbe180;
+    border-radius: 30px;
+    height: 100%;
+    padding: 30px;
+}
+
+.title { 
+    font-size: 4rem;
+    color: #222222;
+    margin: 0;
+}
+
+.subtitle { 
+    font-size: 3rem;
+    margin: 0;
+    color: #222222;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+    color: #222222;
+    font-size: 26px;
+}
