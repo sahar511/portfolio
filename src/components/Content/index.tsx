@@ -5,7 +5,8 @@ import { experiences } from '../../experiences'
 
 export default function Content() {
     function renderExperience() {
-        return experiences.map(item => <ExperienceCard
+        return experiences.map((item, index) => <ExperienceCard
+            key={index}
              title={item.title}
              content={item.description}
              time={item.time}
@@ -16,7 +17,6 @@ export default function Content() {
             <Card title='Experience'>
                 {renderExperience()}
             </Card>
-            <a href="#experience" className={styles.link}>experience</a>
         </section>
     )
 }
