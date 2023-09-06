@@ -25,7 +25,7 @@ export default function Content() {
       <form action='https://usebasin.com/f/7721cbb25618' method='post' className={styles.form}>
         <Input isReguired name='name' type='text' id='name' label='Name' />
         <Input isReguired name='email' type='email' id='email' label='Email' />
-        <Input isReguired name='message' type='text' id='message' label='Message' />
+        <Input isTextArea rows={5} name="message" id="message" label="Message" />
         <Button text='Submit' type='submit' />
       </form>
       {user}

@@ -1,3 +1,5 @@
+import styles from "./Button.style.module.css"
+
 interface ButtonProps {
   type?: "button" | "reset" | "submit";
   text: string;
@@ -6,7 +8,7 @@ interface ButtonProps {
 
 function Button({ text, onClick, type }: ButtonProps) {
   return (
-    <button onClick={() => onClick} type={type}>
+    <button className={styles.button} onClick={() => onClick} type={type}>
       {text}
     </button>
   )
