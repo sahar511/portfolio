@@ -1,6 +1,6 @@
-import './App.css';
-import Content from './components/Content';
-import Header from './components/Header';
+import "./App.css"
+import Content from "./components/Content"
+import Header from "./components/Header"
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Content></Content>
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
