@@ -2,12 +2,10 @@ import Card from "../Card"
 import ExperienceCard from "../ExperienceCard"
 import styles from "./Content.styles.module.css"
 import { experiences } from "../../experiences"
-import { useState } from "react"
 import Input from "../Input"
 import Button from "../Button"
 
 export default function Content() {
-  const[user, setUser] = useState("")
 
   function renderExperience() {
     return experiences.map((item, index) => <ExperienceCard
@@ -28,7 +26,6 @@ export default function Content() {
         <Input isTextArea rows={5} name="message" id="message" label="Message" />
         <Button text='Submit' type='submit' />
       </form>
-      {user}
     </section>
   )
 }
