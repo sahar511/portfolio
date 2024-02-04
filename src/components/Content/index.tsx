@@ -17,7 +17,7 @@ export default function Content() {
   }
   return (
     <section className={styles.container} id="experience">
-      <Card title='Experience'>
+      {/* <Card title='Experience'>
         {renderExperience()}
       </Card>
       <form action='https://usebasin.com/f/7721cbb25618' method='post' className={styles.form}>
@@ -25,7 +25,7 @@ export default function Content() {
         <Input isReguired name='email' type='email' id='email' label='Email' />
         <Input isTextArea rows={5} name="message" id="message" label="Message" />
         <Button text='Submit' type='submit' />
-      </form>
+      </form> */}
     </section>
   )
 }
