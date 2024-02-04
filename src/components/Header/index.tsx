@@ -1,6 +1,5 @@
 import "animate.css"
 
-import Typewriter from "../TypeWriter"
 import SocialLinks from "../Socials"
 
 import styles from "./Header.style.module.css"
