@@ -17,7 +17,6 @@ export default function Header() {
         <a href="#about" className={styles.link}>
         skills
         </a>
-        <SocialLinks />
       </nav>
       <div className={`${styles.card} animate__animated animate__fadeIn`}>
         <div className={styles.box}>
@@ -28,8 +27,9 @@ export default function Header() {
             to see how I bring designs to life and deliver seamless user
             experiences. Let&apos;s s connect and discuss how I can contribute to your
             next web development endeavor.</div>
+          <SocialLinks />
         </div>
-        <button className={styles.button}>Download CV</button>
+        <a className={styles.button} href="/public/cv_saharAref.pdf" target="_blank" download>Download CV</a>
       </div>
     </section>
   )
