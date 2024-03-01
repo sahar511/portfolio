@@ -1,14 +1,14 @@
 import styles from "./Socials.style.module.css"
 
 export default function SocialLinks() {
-  return <div>
+  return <div className={styles.container}>
     <a href="https://github.com/sahar511" >
       <i className={`fa-brands fa-github ${styles.icon}`}></i>
     </a>
     <a href="https://www.linkedin.com/in/sahar-arefzadeh/" >
       <i className={`fa-brands fa-linkedin ${styles.icon}`}></i>
     </a>
-    <a href="#about" >
+    <a href="https://instagram.com/sahar__rf__" >
       <i className={`fa-brands fa-instagram ${styles.icon}`}></i>
     </a>
     <a href="https://twitter.com/sas511_s" >

@@ -1,36 +1,36 @@
 import "animate.css"
 
-import SocialLinks from "../Socials"
-
 import styles from "./Header.style.module.css"
+import { Link } from "react-router-dom"
 
 export default function Header() {
+  const navLinks = [
+    {
+      title: "Home",
+      path: "/",
+    },
+    {
+      title: "Experience",
+      path: "/experience",
+    },
+    {
+      title: "Contact",
+      path: "/contact",
+    },
+  ]
+
+  function renderLinks() {
+    return navLinks.map((item) => (
+      <Link key={item.title} to={item.path} className={styles.link}>
+        {item.title}
+      </Link>
+    ))
+  }
   return (
     <section className={styles.container}>
       <nav className={`${styles.nav} animate__animated animate__fadeInDown`}>
-        <a href="#about" className={styles.link}>
-        About
-        </a>
-        <a href="#experience" className={styles.link}>
-        experience
-        </a>
-        <a href="#about" className={styles.link}>
-        skills
-        </a>
+        {renderLinks()}
       </nav>
-      <div className={`${styles.card} animate__animated animate__fadeIn`}>
-        <div className={styles.box}>
-          <div className={styles.title}>Sahar Arefzadeh</div>
-          <div>  I am a front-end developer with over 3 years of dedicated expertise. I
-            specialize in creating polished, user-friendly interfaces that
-            prioritize functionality and aesthetic harmony. Dive into my projects
-            to see how I bring designs to life and deliver seamless user
-            experiences. Let&apos;s s connect and discuss how I can contribute to your
-            next web development endeavor.</div>
-          <SocialLinks />
-        </div>
-        <a className={styles.button} href="/public/cv_saharAref.pdf" target="_blank" download>Download CV</a>
-      </div>
     </section>
   )
 }

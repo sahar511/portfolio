@@ -1,32 +1,37 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import "./index.css"
-import App from "./App"
-import reportWebVitals from "./reportWebVitals"
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import About from "./views/About"
+
+
+import "./index.css"
+import App from "./App"
+import reportWebVitals from "./reportWebVitals"
+import Experience from "./views/experience"
+import Home from "./views/Home/Home"
+import ContactMe from "./views/ContactMe"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "/experience",
+        element: <Experience/>
+      },
+      {
+        path: "/contact",
+        element: <ContactMe/>
+      }
+    ]
   },
-  {
-    path: "/about",
-    element: <About/>
-  },
-  {
-    path: "/experience",
-    element: <About/>
-  },
-  {
-    path: "/contact",
-    element: <About/>
-  }
 ])
 
 const root = ReactDOM.createRoot(

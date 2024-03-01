@@ -1,0 +1,42 @@
+p {
+    font-size: 22px;
+  }
+  
+  
+  .box {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    padding-top: 100px;
+
+  }
+  
+  .title {
+    font-size: 6rem;
+    color: rgb(0, 0, 0);
+    margin: 0;
+  }
+  
+  .subtitle {
+      font-size: 4rem;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 26px;
+    width: fit-content;
+    margin-bottom: 5px;
+    padding: 5px 30px;
+  }
