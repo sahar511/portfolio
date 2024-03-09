@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <section className='container'>
+      <section className="container">
         <Header></Header>
-        <Outlet/>
+        <Outlet />
       </section>
     </div>
   )

@@ -2,7 +2,7 @@ import styles from "./ContactMe.style.module.css"
 
 export default function ContactMe() {
   return (
-    <div>
+    <div className="animate__animated animate__fadeIn">
       <form action="https://api.web3forms.com/submit" method="POST" className={styles.form}>
         <h1 className={styles.title}>Contact Me</h1>
         <input type="hidden" name="access_key"/>
