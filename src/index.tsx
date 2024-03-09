@@ -9,7 +9,6 @@ import {
 import "./index.css"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
-import Experience from "./views/experience"
 import Home from "./views/Home/Home"
 import ContactMe from "./views/ContactMe"
 
@@ -21,10 +20,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>
-      },
-      {
-        path: "/experience",
-        element: <Experience/>
       },
       {
         path: "/contact",

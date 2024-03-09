@@ -10,10 +10,6 @@ export default function Header() {
       path: "/",
     },
     {
-      title: "Experience",
-      path: "/experience",
-    },
-    {
       title: "Contact",
       path: "/contact",
     },
