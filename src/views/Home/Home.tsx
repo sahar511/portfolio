@@ -7,7 +7,7 @@ export default function Home() {
       <div className={styles.title}>Sahar Arefzadeh</div>
       <div className={styles.subtitle}>Software Engineer</div>
       <p>
-        I am a software engineer with over four years of experience in frontend development working in cross-functional teams. My focus revolves around enhancing projects through feature development, and code maintenance. Proficient in React, Angular, and Vue.js.
+        I am a software engineer with over four years of experience in front-end development working in cross-functional teams. My focus revolves around enhancing projects through feature development, and code maintenance. Proficient in React, Angular, and Vue.js.
       </p>
       <SocialLinks />
     </div>
