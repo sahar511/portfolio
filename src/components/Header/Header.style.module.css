@@ -33,6 +33,10 @@ p {
   padding: 20px 30px;
 }
 
+.activeLink {
+  font-weight: bolder;
+}
+
 .container::after {
   content: "";
   width: 100%;

@@ -1,9 +1,7 @@
 import "animate.css"
 
 import styles from "./Header.style.module.css"
-import { Link } from "react-router-dom"
-
-
+import { NavLink } from "react-router-dom"
 
 export default function Header() {
   const navLinks = [
@@ -16,12 +14,15 @@ export default function Header() {
       path: "/contact",
     },
   ]
+  const navLinkCssClasses = (inp: any): string => {
+    return inp?.isActive ? `${styles.link} ${styles.activeLink}` :styles.link
+  }
 
   function renderLinks() {
     return navLinks.map((item) => (
-      <Link key={item.title} to={item.path} className={styles.link}>
+      <NavLink key={item.title} to={item.path} className={navLinkCssClasses}>
         {item.title}
-      </Link>
+      </NavLink>
     ))
   }
   return (
